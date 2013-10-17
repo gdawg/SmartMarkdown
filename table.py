@@ -141,14 +141,17 @@ def convert_table_list_to_str(table):
     """Convert the python list to str for outputing.
 
     """
+    settings = sublime.load_settings("SmartMarkdown.sublime-settings")
+    corner_marker = settings.get('table_row_corner_marker','+')
+
     table_str = ""
     table = copy.deepcopy(table)
     for row in table:
         if SEPARATOR_PATTERN.match(row[0]):
             row[0] = row[0][1:]  # Remove the mark added in reformat_table_list
-            row_str = "+"
+            row_str = corner_marker
             for col_str in row:
-                row_str += col_str + "+"
+                row_str += col_str + corner_marker
         else:
             row_str = "|"
             for col_str in row:

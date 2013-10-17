@@ -2,6 +2,30 @@
 
 Author: Muchenxuan Tong (demon386@gmail.com)
 
+-----
+
+## NOTE this repo is a clone and might be out of date. 
+
+At present it contains only a very minor change to allow different table 
+styles (see preference section below).
+
+    // setting this will change the style of your heading and seperator rows.
+    // the default makes tables that look like: 
+    // 
+    // | one   | two   |
+    // +-------+-------+
+    // | and   | more  |
+    // 
+    // but changing this to "|" will make them like this:
+    // 
+    // | one   | two   |
+    // | ----- | ----- |
+    // | and   | more  |
+    // 
+    "table_row_corner_marker": "+"
+
+-----
+
 ## Introduction
 The plugin is aimed at making editing Markdown in Sublime Text 2 easier and more powerful. Ideally, I hope we can bring several amazing features of [Org-mode](http://org-mode.org) of Emacs into Sublime Text.
 

@@ -7,5 +7,20 @@
     "pandoc_args": [],
     "pandoc_args_pdf": [],
     "pandoc_args_html": [],
-    "pandoc_args_docx": []
+    "pandoc_args_docx": [],
+
+    // setting this will change the style of your heading and seperator rows.
+    // the default makes tables that look like: 
+    // 
+    // | one   | two   |
+    // +-------+-------+
+    // | and   | more  |
+    // 
+    // but changing this to "|" will make them like this:
+    // 
+    // | one   | two   |
+    // | ----- | ----- |
+    // | and   | more  |
+    // 
+    "table_row_corner_marker": "+"
 }
